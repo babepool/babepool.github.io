@@ -31,18 +31,18 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link" data-toggle="dropdown">
-              <i class="material-icons">home</i> Home
+            <a class="nav-link" href="javascript:void(0)" onclick="scrollToSection0()">
+              <i class="material-icons">home</i> Section0
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToStake()">
-              <i class="material-icons">assignment_turned_in</i> Staking
+            <a class="nav-link" href="javascript:void(0)" onclick="scrollToSection1()">
+              <i class="material-icons">assignment_turned_in</i> Section1
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="material-icons">shopping_cart</i> Store
+            <a class="nav-link" href="javascript:void(0)" onclick="scrollToSection2()">
+              <i class="material-icons">shopping_cart</i> Section2
             </a>
           </li>
           <li class="nav-item">
@@ -84,7 +84,7 @@
 
   <div class="main main-raised">
 
-    <div class="section">
+    <div class="section section-0" id="section-0">
       <div class="container">
 
         <div class="text-center">
@@ -116,7 +116,7 @@
       </div>
     </div>
 
-    <div class="section section-invert">
+    <div class="section section-invert section-1" id="section-1">
       <div class="container">
         <div class="text-center">
           <h2 class="title">Eiusmod tempor incididunt</h2>
@@ -132,7 +132,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section section-2" id="section-2">
       <div class="container">
 
         <div class="text-center">
@@ -212,10 +212,26 @@
     });
 
 
-    function scrollToStake() {
-      if ($('.section-stake').length != 0) {
+    function scrollToSection0() {
+      if ($('.section-0').length != 0) {
         $("html, body").animate({
-          scrollTop: $('.section-stake').offset().top
+          scrollTop: $('.section-0').offset().top
+        }, 1000);
+      }
+    }
+
+    function scrollToSection1() {
+      if ($('.section-1').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-1').offset().top
+        }, 1000);
+      }
+    }
+
+    function scrollToSection2() {
+      if ($('.section-2').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-2').offset().top
         }, 1000);
       }
     }
