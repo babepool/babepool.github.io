@@ -1,3 +1,8 @@
 .section-invert {
     background: #EEEEEE;
   }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
