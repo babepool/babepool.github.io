@@ -17,7 +17,7 @@
 
 <body>
 
-  <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+  <nav class="navbar navbar-color-on-scroll bg-white fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand">Babe Pool</a>
@@ -42,16 +42,21 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="javascript:void(0)" onclick="scrollToSection2()">
-              <i class="material-icons">shopping_cart</i> Section2
+              <i class="material-icons">face</i> About
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/" target="_blank" data-original-title="Follow us on Twitter" rel="nofollow">
+            <a class="nav-link" href="javascript:void(0)" onclick="scrollToSection3()">
+              <i class="material-icons">account_balance</i> Pool Info
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/babepoolio" target="_blank" data-original-title="Follow us on Twitter" rel="nofollow">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/" target="_blank" data-original-title="Follow us on Instagram" rel="nofollow">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/nuutally" target="_blank" data-original-title="Follow us on Instagram" rel="nofollow">
               <i class="fa fa-instagram"></i>
             </a>
           </li>
@@ -99,7 +104,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section section-1" id="section-1">
       <div class="container">
         <div class="text-center">
           <h2 class="title">What are staking and rewards?</h2>
@@ -129,7 +134,7 @@
       </div>
     </div>
 
-    <div class="section section-invert">
+    <div class="section section-invert section-2" id="section-2">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -172,6 +177,37 @@
       </div>
     </div>
 
+    <div class="section page-header header-filter section-3" style="background-image: url('https://source.unsplash.com/0uTjgCkVtvM/1600x800')" id="section-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 ml-auto mr-auto">
+            <div class="card">
+              <div class="card-header card-header-text card-header-primary">
+                <h4 class="card-title">Ticker: <span id="17c0d3a812eb2df3c6c62b69d35b2e2ae1050ea4e362c6c4bdb1a659_db_ticker"></span></h4>
+                <h6 class="card-subtitle mb-2">Name: <span id="17c0d3a812eb2df3c6c62b69d35b2e2ae1050ea4e362c6c4bdb1a659_db_name"></span></h6>
+                <p class="category">Pool ID: <span id="17c0d3a812eb2df3c6c62b69d35b2e2ae1050ea4e362c6c4bdb1a659_pool_id_bech32"></span></p>
+                <p class="category">Description: <span id="17c0d3a812eb2df3c6c62b69d35b2e2ae1050ea4e362c6c4bdb1a659_db_description"></span></p>
+              </div>
+              <div class="card-body">
+                <br>
+                <h5 class="card-subtitle"><i class="material-icons">savings</i> Total Stake: <strong><span id="17c0d3a812eb2df3c6c62b69d35b2e2ae1050ea4e362c6c4bdb1a659_total_stake"></span></strong></h5>
+                <h5 class="card-subtitle"><i class="material-icons">receipt</i> Fixed Cost: <strong><span id="17c0d3a812eb2df3c6c62b69d35b2e2ae1050ea4e362c6c4bdb1a659_tax_fix"></span>₳</strong></h5>
+                <h5 class="card-subtitle"><i class="material-icons">request_page</i> Costs: <strong>4</strong>%</h5>
+                <h5 class="card-subtitle"><i class="material-icons">star</i> Last Reward Epoch: <strong><span id="17c0d3a812eb2df3c6c62b69d35b2e2ae1050ea4e362c6c4bdb1a659_rewards_epoch"></span></strong></h5>
+                <h5 class="card-subtitle"><i class="material-icons">insights</i> Lifetime ROA: <strong><span id="17c0d3a812eb2df3c6c62b69d35b2e2ae1050ea4e362c6c4bdb1a659_roa_lifetime"></span>%</strong></h5>
+                <h5 class="card-subtitle"><i class="material-icons">timeline</i> Monthly ROA: <strong><span id="17c0d3a812eb2df3c6c62b69d35b2e2ae1050ea4e362c6c4bdb1a659_roa"></span>%</strong></h5>
+                <h5 class="card-subtitle"><i class="material-icons">schema</i> Blocks Lifetime: <strong><span id="17c0d3a812eb2df3c6c62b69d35b2e2ae1050ea4e362c6c4bdb1a659_blocks_lifetime"></span></strong></h5>
+                <h5 class="card-subtitle"><i class="material-icons">account_tree</i> Blocks in epoch: <strong><span id="17c0d3a812eb2df3c6c62b69d35b2e2ae1050ea4e362c6c4bdb1a659_blocks_epoch"></span></strong></h5>
+                <h5 class="card-subtitle"><i class="material-icons">gavel</i> Commited Pledge: <strong><span id="17c0d3a812eb2df3c6c62b69d35b2e2ae1050ea4e362c6c4bdb1a659_pledge"></span>₳</strong></h5>
+                <h5 class="card-subtitle"><i class="material-icons">leaderboard</i> Rank: <strong><span id="17c0d3a812eb2df3c6c62b69d35b2e2ae1050ea4e362c6c4bdb1a659_rank"></span></strong></h5>
+                More info on: <a href="https://adapools.org/pool/17c0d3a812eb2df3c6c62b69d35b2e2ae1050ea4e362c6c4bdb1a659" class="btn btn-primary btn-link" target="_blank">ADApools.org</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <footer class="footer footer-default">
@@ -205,7 +241,7 @@
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-<script src="assets/js/material-kit.js?v=2.0.4" type="text/javascript"></script></body>
+<script src="assets/js/material-kit.js?v=2.0.4" type="text/javascript"></script>
   <script>
     $(document).ready(function() {
       //init DateTimePickers
@@ -239,7 +275,28 @@
         }, 1000);
       }
     }
+
+    function scrollToSection3() {
+      if ($('.section-3').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-3').offset().top
+        }, 1000);
+      }
+    }
   </script>
+
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$.getJSON('https://js.adapools.org/pools/17c0d3a812eb2df3c6c62b69d35b2e2ae1050ea4e362c6c4bdb1a659/summary.json', function(data) { 
+$.each( data.data, function( i, val ) { 
+		a=new Array('tax_fix','pledge','total_stake');
+		if(a.includes(i))  val=Math.round(parseInt(val)/1000000);
+		if(i=='blocks_lifetime') val=parseInt(val) + parseInt(data.data.blocks_epoch);
+
+		$('#17c0d3a812eb2df3c6c62b69d35b2e2ae1050ea4e362c6c4bdb1a659_'+i).html(val).text();   
+}); 
+		});
+</script>
 </body>
 
 </html>
